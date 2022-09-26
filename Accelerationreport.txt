@@ -1,0 +1,68 @@
+Acceleration Period :-
+
+1. visual studio :- It is an advanced Intergrated Development Environment(IDE).
+                Visual Studio Code combines the simplicity of a source code editor with powerful developer tooling,completion and debugging.
+
+  1. solution Explore :- Solution Explorer manages and browses the files in a solution.
+
+  2. Server Explorer :- It manages Database connections on a computer.
+
+  3. Team Explorer :- Integrates the Axure DevOps Into the VS IDE.
+
+  4. Build Solution :- compiles code files.
+
+  5. Rebuild Solution :- Deletes all compiled files and Compiles them again regardless of whether or not the code has changed.
+
+  6. Clean Solution :- Delete all intermediate files.
+
+  7. Debug :- debugging is the process of finding and resolving bugs within computer programs, software, or systems(Alt f5).
+
+  8. BreakPoint :- It is used to debug line by line.
+     fn f10 :- it allows to move from one line to next line.
+     fn f11 :- it will take you to every line including your finction body.
+
+2. .Net FrameWork :- It is a virtual machine that provide a common platform to run an application that was built using the different language such as C#,
+                 Visual Basic, etc.It is also used to create a form based, console-based, mobile and web-based application or services 
+                .NET framework is a pure object oriented, its application runs only to the windows platform.
+
+   1. .Net Core :- .NET Core is a new version of .NET Framework, which is a free, open-source, general-purpose development platform maintained by Microsoft. 
+                    It is a cross-platform framework that runs on Windows, macOS, and Linux operating systems.
+                
+   2. difference between .Net core and .Net Framework :-
+         1.Open-Source:- .NET Core is an open-source platform.	
+                         .Net Framework includes certain open source components.
+         2.Performance and Scalability:- .NET core provides high scalability and performance in comparison to .NET Framework.	
+                                         .NET Framework is less scalable and provides low performance in comparison to .NET Core
+         3.Cross-Platform:- it is compatible with a variety of operating systems, including Windows, Linux, and Mac OS.	
+                            .NET Framework is compatible with Windows OS(operating system).
+         4.Packaging and shipping:- .NET Core is shipped as a collection of Nuggets packages.
+                                    All the libraries of the .NET Framework are packed and shipped together. 
+  
+   3. Asp.Net:-  It is a developer plateform made up of tools,programming languages, and libraries for building many difference types of application.
+
+   4.  The two major components of .NET Framework are the Common Language Runtime and the .NET Framework Class Library.
+         1. The Common Language Runtime (CLR) is the execution engine that handles running applications. It provides services 
+            like thread management,garbage collection, type-safety, exception handling, and more.
+         2. The Class Library provides a set of APIs and types for common functionality. It provides types for strings, dates, numbers, etc. 
+            The Class Library includes APIs for reading and writing files, connecting to databases, drawing, and more.
+
+3. GitHub :- It is a website and cloud-based service that helps developers store and manage their code, as well as track and control changes to their code.
+
+    1. Git :- Git is a version control system.
+
+    2. vesrsion Control System :-  that tracks changes to a file or set of files over time.
+
+    3. Committed state :- when all the changes made to the file have been saved in the local repo. 
+                          Files in the committed stage are files ready to be pushed to the remote repo (on GitHub).
+
+    4. Modified state:-  A file in the modified state has some changes made to it but it's not yet saved.
+    
+    5. Staged state:-  it is ready to be committed. In this state, all necessary changes have been made so the next step is to move the file to the commit state.
+
+    6. Branches :- Branches allow you to develop features, fix bugs, or safely experiment with new ideas in a contained area of your repository.
+
+    7. Repository :- repository tracks and saves the history of all changes made to the files in a Git project
+
+    8. Push :-  It is used to upload local repository content to a remote repository.
+
+    9. Pull :- updates some parts of your local repository with changes from the remote repository.
