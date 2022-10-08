@@ -127,10 +127,14 @@ class Car : Vehicle  // derived class (child)
 }
 
 Polymorphism :-
-                The word polymorphism is derived from two Greek words: poly and morphs. The word “Poly” means many and “morphs” means forms. Therefore, polymorphism means “many forms” or we can say that the word polymorphism means the ability to take more than one form. That is one thing that can take many forms.
-Polymorphism is a concept by which we can perform a single task in different ways. That is, when a single entity behaves differently in different cases, it is called polymorphism in C#.
+                The word polymorphism is derived from two Greek words: poly and morphs. The word “Poly” means many and “morphs” means forms.
+               Therefore, polymorphism means “many forms” or we can say that the word polymorphism means the ability to take more than one form.
+               That is one thing that can take many forms.Polymorphism is a concept by which we can perform a single task in different ways
+              That is, when a single entity behaves differently in different cases, it is called polymorphism in C#.
  There are two types of polymorphism
- compile time polymorphism and runtime polymorphism. Compile time polymorphism is achieved by method overloading and operator overloading in C#. It is also known as static binding or early binding. Runtime polymorphism in achieved by method overriding which is also known as dynamic binding or late binding.
+       compile time polymorphism and runtime polymorphism. Compile time polymorphism is achieved by method overloading and operator overloading in C#.
+         It is also known as static binding or early binding. Runtime polymorphism in achieved by method overriding 
+       which is also known as dynamic binding or late binding.
 
 Method overloading :- same name but parameter is different.
       void area(int a,int b)
@@ -159,8 +163,9 @@ Example:-
 }
  
  Properties :- 
-               private variables can only be accessed within the same class (an outside class has no access to it). However, sometimes we need to access them - and it can be done with properties.
-A property is like a combination of a variable and a method, and it has two methods: a get and a set method:
+               private variables can only be accessed within the same class (an outside class has no access to it). However, 
+               sometimes we need to access them - and it can be done with properties.
+           A property is like a combination of a variable and a method, and it has two methods: a get and a set method:
 Example :-
            class Person
 {
@@ -172,7 +177,9 @@ Example :-
     set { name = value; }  // set method
   }
 }
-Partial :-  we can physically split the content of the class into different files but even physically they are divided but logically it is one single unit only. A                 class in which code can be written in two or more files is known as a partial class. To make any class partial we need to use the keyword partial.
+Partial :-  we can physically split the content of the class into different files but even physically they are divided but logically 
+            it is one single unit only. A class in which code can be written in two or more files is known as a partial class. 
+            To make any class partial we need to use the keyword partial.
 Example:-
          namespace PartialClasses
 {
@@ -200,9 +207,11 @@ Exceptional handling :-  An exception is a problem that arises during the execut
 
    try − A try block identifies a block of code for which particular exceptions is activated. It is followed by one or more catch blocks.
 
-   catch − A program catches an exception with an exception handler at the place in a program where you want to handle the problem. The catch keyword indicates the               catching of an exception.
+   catch − A program catches an exception with an exception handler at the place in a program where you want to handle the problem.
+            The catch keyword indicates the catching of an exception.
 
-   finally − The finally block is used to execute a given set of statements, whether an exception is thrown or not thrown. For example, if you open a file, it must be               closed whether an exception is raised or not.
+   finally − The finally block is used to execute a given set of statements, whether an exception is thrown or not thrown. 
+           For example, if you open a file, it must be closed whether an exception is raised or not.
 
    throw − A program throws an exception when a problem shows up. This is done using a throw keyword.
    
