@@ -10,6 +10,7 @@ Class:- A class is simply a user-defined data type that represents both state an
         we can say that a class is the blueprint/plan/template that describes the details of an object. 
        A class is a blueprint from which the individual objects are created.
        A Class is composed of three things i.e. a name, attributes, and operations.
+       It is a collection of data field, properties and method.
   
 Example :-
             class Car 
@@ -40,10 +41,76 @@ Constructor :-  constructor is a special method which is invoked automatically a
                 It does not have input argument.
 Example:-
           car() // constructor
+          
+Access Modifier:-To control the visibility of class members (the security level of each individual class and class member).
+                4 Types of access modifier
+   Private:-we can access that member with the class only. From outside the class, we cannot access them.
+  
+   Public :- then we can access that member from anywhere. That means there is no restriction for public members. 
 
-Inheritance:- it is possible to inherit fields and methods from one class to another.
+   Protected:- That means protected members are available within the parent class (i.e. the containing type) 
+               as well as to the child/derived classes (classes derived from the containing type).
+               
+     Internal :-  The code is only accessible within its own assembly.
+     
+ Encapsulation :-
+           Encapsulation is the concept of wrapping data into a single unit. It collects data members and member functions into a single unit called class. 
+           
+  Example :-
+              namespace EncapsulationDemo
+{
+    class Bank
+    {
+        public long AccountNumber;
+        public string Name;
+        public int Balance;
+        public void GetBalance()
+        {
+        }
+        public void WithdrawAmount()
+        {
+        }
+        public void Deposit()
+        {
+        }
+    }
+}
+
+Abstraction :- Data abstraction is the process of hiding certain details and showing only essential information to the user.
+             Abstraction can be achieved with either abstract classes or interfaces.
+             
+Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
+                It contains declaration and definition.
+
+Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the derived class (inherited from).
+
+example:-
+         abstract class Animal 
+{
+  public abstract void animalSound();
+  public void sleep() 
+  {
+    Console.WriteLine("Zzz");
+  }
+}
+Animal myObj = new Animal(); // Will generate an error
+
+Interface :- It contains only declaration.
+             It can support multiple inheritance.
+             It Contain only Abstract Methods.
+             Interface members are by default abstract and public
+             
+ Example :- 
+             interface Animal 
+{
+  void animalSound(); // interface method (does not have a body)
+}
+
+Inheritance :-
+               Inheritance:- it is possible to inherit fields and methods from one class to another.
               Derived Class (child) - the class that inherits from another class  
               Base Class (parent) - the class being inherited from.
+              It is useful for code reusability: reuse fields and methods of an existing class when you create a new class.
   Example :-
              class Vehicle  // base class (parent) 
 {
@@ -59,10 +126,95 @@ class Car : Vehicle  // derived class (child)
   public string modelName = "Mustang";  // Car field
 }
 
-Access Modifier:- 4 Types of access modifier
-   Private:-we can access that member with the class only. From outside the class, we cannot access them.
-  
-   Public :- then we can access that member from anywhere. That means there is no restriction for public members. 
+Polymorphism :-
+                The word polymorphism is derived from two Greek words: poly and morphs. The word “Poly” means many and “morphs” means forms. Therefore, polymorphism means “many forms” or we can say that the word polymorphism means the ability to take more than one form. That is one thing that can take many forms.
+Polymorphism is a concept by which we can perform a single task in different ways. That is, when a single entity behaves differently in different cases, it is called polymorphism in C#.
+ There are two types of polymorphism
+ compile time polymorphism and runtime polymorphism. Compile time polymorphism is achieved by method overloading and operator overloading in C#. It is also known as static binding or early binding. Runtime polymorphism in achieved by method overriding which is also known as dynamic binding or late binding.
 
-   Protected:- That means protected members are available within the parent class (i.e. the containing type) 
-               as well as to the child/derived classes (classes derived from the containing type).
+Method overloading :- same name but parameter is different.
+      void area(int a,int b)
+      {
+      }
+      void are(int r)
+      {
+      }
+      
+ method overriding :- same name and same parameter.
+         void area(int r)
+         {
+         }
+        void area(int r)
+        {
+        }
+        
+Enum :- An enum is a special "class" that represents a group of constants.
+        By default, the first item of an enum has the value 0. The second has the value 1, and so on.
+Example:-
+         enum Level 
+{
+  Low, //0
+  Medium, //1
+  High  //2
+}
+ 
+ Properties :- 
+               private variables can only be accessed within the same class (an outside class has no access to it). However, sometimes we need to access them - and it can be done with properties.
+A property is like a combination of a variable and a method, and it has two methods: a get and a set method:
+Example :-
+           class Person
+{
+  private string name; // field
+
+  public string Name   // property
+  {
+    get { return name; }   // get method
+    set { name = value; }  // set method
+  }
+}
+Partial :-  we can physically split the content of the class into different files but even physically they are divided but logically it is one single unit only. A                 class in which code can be written in two or more files is known as a partial class. To make any class partial we need to use the keyword partial.
+Example:-
+         namespace PartialClasses
+{
+    public partial class PartialClass
+    {
+    public void HelloWorld()
+    {
+        Console.WriteLine("Hello, world!");
+    }
+    }
+}
+namespace PartialClasses
+{
+    public partial class PartialClass
+    {
+    public void HelloUniverse()
+    {
+        Console.WriteLine("Hello, universe!");
+    }
+    }
+   }
+   
+Exceptional handling :-  An exception is a problem that arises during the execution of a program. A C# exception is a response to an exceptional circumstance that                            arises while a program is running, such as an attempt to divide by zero.Exceptions provide a way to transfer control 
+                         from one part of a program to another. C# exception handling is built upon four keywords: try, catch, finally, and throw.
+
+   try − A try block identifies a block of code for which particular exceptions is activated. It is followed by one or more catch blocks.
+
+   catch − A program catches an exception with an exception handler at the place in a program where you want to handle the problem. The catch keyword indicates the               catching of an exception.
+
+   finally − The finally block is used to execute a given set of statements, whether an exception is thrown or not thrown. For example, if you open a file, it must be               closed whether an exception is raised or not.
+
+   throw − A program throws an exception when a problem shows up. This is done using a throw keyword.
+   
+   Example :-
+               try {
+   // statements causing exception
+} catch( ExceptionName e1 ) {
+   // error handling code
+} catch( ExceptionName e2 ) {
+   // error handling code
+} catch( ExceptionName eN ) {
+   // error handling code
+} finally {
+   // statements to be executed
+}
