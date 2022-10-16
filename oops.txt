@@ -228,3 +228,36 @@ Exceptional handling :-  An exception is a problem that arises during the execut
 } finally {
    // statements to be executed
 }
+
+Attributes :-  An attribute is a declarative tag that is used to convey information to runtime about the behaviors of various elements like classes, methods,                            structures, enumerators, assemblies etc. You can add declarative information to a program by using an attribute.
+                        A declarative tag is depicted by square ([ ]) brackets placed above the element it is used for.
+          Attributes are used for adding metadata, such as compiler instruction and other information such as comments, description, methods and classes to a program.
+      
+ syntax :-
+            [attribute(positional_parameters, name_parameter = value, ...)]
+
+Indexers:- The Indexers in C# are the members of a class and if we define indexers in a class then the class behaves like a virtual array. 
+            So it’s a member of a class that gives access to the values of a class just like an array. 
+            
+syntax :-
+           element-type this[int index] {
+
+   // The get accessor.
+   get {
+      // return the value specified by index
+   }
+   
+   // The set accessor.
+   set {
+      // set the value specified by index
+   }
+}
+Solid Principle :- 
+
+    Single Responsibility Principle :- A class should do one thing and therefore it should have only a single reason to change.
+    Open-Closed Principle :- that classes should be open for extension and closed to modification.
+    Liskov Substitution Principle :- that subclasses should be substitutable for their base classes.
+                                      This means that, given that class B is a subclass of class A
+    Interface Segregation Principle :- Segregation means keeping things separated, and the Interface Segregation Principle is about separating the interfaces.
+    Dependency Inversion Principle :- The Dependency Inversion principle states that our classes should depend upon interfaces or 
+                                      abstract classes instead of concrete classes and functions.
